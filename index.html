@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buka di Browser</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff8e1;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 500px;
+      background: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .highlight {
+      font-weight: bold;
+      color: #e65100;
+    }
+  </style>
+  <script>
+    // Cek apakah user bukan di TikTok WebView
+    const isInTikTok = navigator.userAgent.includes("TikTok");
+
+    if (!isInTikTok) {
+      // Kalau sudah bukan di TikTok, langsung redirect
+      window.location.href = "https://collshp.com/mychart.id";
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <p>Untuk melanjutkan, silakan klik <span class="highlight">ikon titik tiga</span> di pojok kanan atas,</p>
+    <p>lalu pilih <span class="highlight">"Buka di browser"</span>.</p>
+    <p>Setelah itu kamu akan diarahkan secara otomatis ke halaman katalog.</p>
+    <p>Terima kasih!</p>
+  </div>
+</body>
+</html>
